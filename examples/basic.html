@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic example</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="../dist/TableTrHref.js"></script>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            padding: 0.25rem 0.75rem;
+        }
+
+        /* keep td padding */
+        tr.tth > td{
+            padding: 0;
+        }
+        tr.tth > td > a{
+            padding: 0.25rem 0.75rem;
+        }
+        /* on hover color */
+        tr.tth:hover{
+            background-color: #4d97ff;
+        }
+        /* cancel link default style */
+        tr.tth > td > a{
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Basic example</h1>
+
+<table>
+    <tr>
+        <th>Column A</th>
+        <th>Column B</th>
+    </tr>
+    <tr data-href="/link1">
+        <td>Value A1</td>
+        <td>Value B1</td>
+    </tr>
+    <tr data-href="/link2" data-target="_blank">
+        <td>Value A2</td>
+        <td>Value B2</td>
+    </tr>
+</table>
+
+<h2>TODO</h2>
+<ul>
+    <li>Virer window.TableTrHref = new TableTrHref(); du constructeur</li>
+    <li>Tests jasmine ?</li>
+</ul>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function(){
+    TableTrHref.init();
+  }, false);
+</script>
+
+</body>
+</html>

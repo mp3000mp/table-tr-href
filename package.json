@@ -1,0 +1,41 @@
+{
+  "name": "table-tr-href",
+  "version": "0.0.1",
+  "description": "Simple library that wrap `<td>` cell content in a `<a>` tag for an entire `<tr>` row",
+  "main": "/src/TableTrHref.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode=development",
+    "watch": "webpack --mode=development --watch",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mp3000mp/table-tr-href.git"
+  },
+  "keywords": [
+    "table",
+    "tr",
+    "td",
+    "a",
+    "href"
+  ],
+  "author": "mp3000mp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mp3000mp/table-tr-href/issues"
+  },
+  "homepage": "https://github.com/mp3000mp/table-tr-href#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "css-loader": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0"
+  }
+}
