@@ -2,6 +2,16 @@
 Simple library that wrap `<td>` cell content in a `<a>` tag for an entire `<tr>` row
 
 
+Table of Contents
+-----------------
+
+ - [Demo](#demo)
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - [Examples](#examples)
+ - [Style](#style)
+
+
 Demo
 ----
 
@@ -22,7 +32,7 @@ Usage
 -----
 
 ```js
-// This will look for tr[data-href] on document ready
+// This will create window.TableTrHref
 const TableTrHref = require('table-tr-href')
 ```
 
@@ -32,26 +42,31 @@ Examples
 
 You can force rendering a DOMElement:
 ```js
-// This will look for tr[data-href] in #py-popup element
-TableTrHref.init(document.getElementById('my-table'))
+// on document ready
+document.addEventListener('DOMContentLoaded', function(){
+    // This will look for tr[data-href] document
+    TableTrHref.init();
+    // This will look for tr[data-href] in #my-table
+    TableTrHref.init(document.getElementById('my-table'));
+});
 ```
 
 The example above will transform this html:
 
 ```html
 <table id="my-table">
-<tr>
-    <th>Column A</th>
-    <th>Column B</th>
-</tr>
-<tr data-href="/link1">
-    <td>Value A1</td>
-    <td>Value B1</td>
-</tr>
-<tr data-href="/link2" data-target="_blank">
-    <td>Value A2</td>
-    <td>Value B2</td>
-</tr>
+    <tr>
+        <th>Column A</th>
+        <th>Column B</th>
+    </tr>
+    <tr data-href="/link1">
+        <td>The entire row</td>
+        <td>is a link</td>
+    </tr>
+    <tr data-href="/link2" data-target="_blank">
+        <td>The entire row</td>
+        <td>is a target _blank link</td>
+    </tr>
 </table>
 ```
 
@@ -64,12 +79,12 @@ Into:
     <th>Column B</th>
 </tr>
 <tr class="tth">
-    <td><a href="/link1">Value A1</a></td>
-    <td><a href="/link1">Value B1</a></td>
+    <td><a href="/link1">The entire row</a></td>
+    <td><a href="/link1">is a link</a></td>
 </tr>
 <tr class="tth">
-    <td><a href="/link2" target="_blank">Value A2</a></td>
-    <td><a href="/link2" target="_blank">Value B2</a></td>
+    <td><a href="/link2" target="_blank">The entire row</a></td>
+    <td><a href="/link2" target="_blank">is a target _blank link</a></td>
 </tr>
 </table>
 ```

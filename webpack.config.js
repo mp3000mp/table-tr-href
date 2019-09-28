@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   entry: './src/TableTrHref.js',
@@ -8,8 +8,20 @@ module.exports = {
   },
   module: {
     rules: [{
-        test: /\.scss$/,
-        loader: ['style-loader', 'css-loader', 'sass-loader', 'postcss-loader']
-      }]
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'eslint-loader',
+      options: {
+        format: 'stylish',
+        fix: false,
+        outputReport: {
+          filePath: 'eslint.html',
+          formatter: 'html',
+        },
+      },
+    }, {
+      test: /\.scss$/,
+      loader: ['style-loader', 'css-loader', 'sass-loader', 'postcss-loader']
+    }]
   }
-};
+}
