@@ -1,10 +1,11 @@
 # table-tr-href
-Simple library that wrap `<td>` cell content in a `<a>` tag for an entire `<tr>` row
+Simple library with no dependencies that wrap `<td>` cell content in a `<a>` tag for an entire `<tr>` row
 
 [![Build Status](https://travis-ci.com/mp3000mp/table-tr-href.svg?branch=master)](https://travis-ci.com/mp3000mp/table-tr-href)
 [![Coverage Status](https://coveralls.io/repos/github/mp3000mp/table-tr-href/badge.svg?branch=master)](https://coveralls.io/github/mp3000mp/table-tr-href?branch=master)
-
-
+[![npm version](https://badge.fury.io/js/table-tr-href.svg)](https://badge.fury.io/js/table-tr-href)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+ 
 Table of Contents
 -----------------
 
@@ -18,9 +19,7 @@ Table of Contents
 Demo
 ----
 
-[Try it online](https://mp3000mp.github.io/demo/table-tr-href)
-
-[Try it on jsfiddle](https://jsfiddle.net/7s4juwfp/)
+[Try it on JSFiddle](https://jsfiddle.net/7s4juwfp/)
 
 
 Installation
@@ -47,7 +46,7 @@ You can force rendering a DOMElement:
 ```js
 // on document ready
 document.addEventListener('DOMContentLoaded', function(){
-    // This will look for tr[data-href] document
+    // This will look for tr[data-href] in document
     TableTrHref.init();
     // This will look for tr[data-href] in #my-table
     TableTrHref.init(document.getElementById('my-table'));

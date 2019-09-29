@@ -1,8 +1,11 @@
 {
   "name": "table-tr-href",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Simple library that wrap `<td>` cell content in a `<a>` tag for an entire `<tr>` row",
-  "main": "/src/TableTrHref.js",
+  "main": "/dist/TableTrHref.min.js",
+  "files": [
+    "dist/*.js"
+  ],
   "directories": {
     "example": "examples",
     "test": "test"
@@ -31,10 +34,6 @@
     "url": "https://github.com/mp3000mp/table-tr-href/issues"
   },
   "homepage": "https://github.com/mp3000mp/table-tr-href#readme",
-  "files": [
-    "dist/*.css",
-    "dist/*.js"
-  ],
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "cheerio": "^1.0.0-rc.3",

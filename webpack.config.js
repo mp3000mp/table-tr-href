@@ -22,7 +22,7 @@ module.exports = {
 		}]
 	},
 	output: {
-		filename: 'TableTrHref.js',
+		filename: 'TableTrHref.min.js',
 		path: path.resolve(__dirname, 'dist')
 	}
 };
