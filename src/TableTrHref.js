@@ -1,5 +1,5 @@
 'use strict';
-require('./TableTrHref.scss');
+//require('./TableTrHref.scss');
 
 const tthClass = 'tth';
 const dataHref = 'data-href';
@@ -20,13 +20,13 @@ function TableTrHref () {
 		DOMElement = DOMElement || document;
 		const trList = DOMElement.querySelectorAll('tr[data-href]');
 		trList.forEach(function (tr) {
-			const url = tr.getAttribute(dataHref);
+			let url = tr.getAttribute(dataHref);
 			tr.removeAttribute(dataHref);
-			const target = tr.getAttribute(dataTarget) || '';
+			let target = tr.getAttribute(dataTarget) || '';
 			tr.removeAttribute(dataTarget);
 			tr.classList.add(tthClass);
-			const tdList = tr.children;
-			for (const td of tdList) {
+			let tdList = tr.children;
+			for (let td of tdList) {
 				td.innerHTML = `<a href="${url}" target="${target}">${td.innerHTML}</a>`;
 			}
 		});

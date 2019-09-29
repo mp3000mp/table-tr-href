@@ -26,7 +26,6 @@
     "no-nested-ternary": "error",
     "no-trailing-spaces": "error",
     "no-var": "error",
-    "prefer-const": "error",
     "prefer-template": "error",
     "semi": ["error", "always"],
     "semi-style": ["error", "last"],
