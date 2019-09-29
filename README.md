@@ -18,9 +18,9 @@ Table of Contents
 Demo
 ----
 
-[Try it online](https://mp3000mp.github.io/table-tr-href/demo1)
+[Try it online](https://mp3000mp.github.io/demo/table-tr-href)
 
-[Try it on jsfiddle](https://jsfiddle.net/)
+[Try it on jsfiddle](https://jsfiddle.net/7s4juwfp/)
 
 
 Installation
