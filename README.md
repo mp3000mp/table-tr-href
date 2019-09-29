@@ -1,6 +1,9 @@
 # table-tr-href
 Simple library that wrap `<td>` cell content in a `<a>` tag for an entire `<tr>` row
 
+[![Build Status](https://travis-ci.com/mp3000mp/table-tr-href.svg?branch=master)](https://travis-ci.com/mp3000mp/table-tr-href)
+[![Coverage Status](https://coveralls.io/repos/github/mp3000mp/table-tr-href/badge.svg?branch=master)](https://coveralls.io/github/mp3000mp/table-tr-href?branch=master)
+
 
 Table of Contents
 -----------------
