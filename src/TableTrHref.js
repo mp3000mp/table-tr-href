@@ -1,19 +1,18 @@
 'use strict';
-//require('./TableTrHref.scss');
+require('./TableTrHref.scss');
 
 const tthClass = 'tth';
 const dataHref = 'data-href';
 const dataTarget = 'data-target';
 
 /**
- * launches init once
  * @constructor
  */
 function TableTrHref () {
 
 	/**
 	 * Finds all tr[data-href] and wrap <td> contents in a <a> tag
-	 * Possibility to set data-target with valid target attribute value
+	 * Possibility to set data-target with a valid target attribute value
 	 * @param DOMElement
 	 */
 	this.init = (DOMElement) => {

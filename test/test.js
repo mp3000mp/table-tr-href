@@ -3,6 +3,7 @@ require('jsdom-global')();
 const assert = require('assert');
 const cheerio = require('cheerio');
 const fs = require('fs');
+require('ignore-styles');
 const path = require('path');
 const TableTrHref = require('../src/TableTrHref');
 
