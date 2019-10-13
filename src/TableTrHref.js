@@ -34,6 +34,7 @@ function TableTrHref () {
 
 const oTableTrHref = new TableTrHref();
 module.exports = oTableTrHref;
+/* istanbul ignore next */
 if (typeof window !== 'undefined') {
 	window.TableTrHref = oTableTrHref;
 }
