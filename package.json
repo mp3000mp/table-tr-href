@@ -1,10 +1,11 @@
 {
   "name": "table-tr-href",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple library with no dependencies that wrap `<td>` cell content in a `<a>` tag for an entire `<tr>` row",
-  "main": "/dist/TableTrHref.min.js",
+  "main": "/src/TableTrHref.js",
   "files": [
-    "dist/*.js"
+    "dist",
+    "src"
   ],
   "directories": {
     "example": "examples",
